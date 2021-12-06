@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: green;
+        justify-content: flex-start;
+        flex-direction: row;
+        width: 200vh;
+      }
+
+      .flex-container > div {
+        font-size: 30px;
+        background-color: rgb(243, 241, 241);
+        width: 20vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexible Layout-justify-content property demo</h1>
+    <p>Parent Element (Container)</p>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+    </div>
+    <p>Try to resize the browser window.</p>
+    <p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+    <p>
+      <strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or
+      earlier versions.
+    </p>
+  </body>
+</html>

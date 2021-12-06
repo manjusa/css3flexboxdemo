@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <!--https://www.youtube.com/watch?v=XIJZjhqs7m0-->
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: green;
+        align-items: flex-end;
+        /* justify-content: flex-end; */
+        flex-direction: row;
+        height: 50vh;
+      }
+
+      .flex-container > div {
+        font-size: 30px;
+        width: 20vh;
+        background-color: rgb(243, 241, 241);
+      }
+
+      .height30 {
+        margin-top: 30px;
+        height:30px;
+      }
+      .height10 {
+        margin-top: 10px;
+        height:10px;
+      }
+      .height50 {
+        margin-top: 50px;
+        height:50px;
+      }
+      .height60 {
+        margin-top: 60px;
+        height:60px;
+      }
+      .height70 {
+        margin-top: 70px;
+        height:70px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexible Layout-align items</h1>
+    <p>Parent Element (Container)</p>
+    <div class="flex-container">
+      <div class="height30">1</div>
+      <div class="height10">2</div>
+      <div class="height50">3</div>
+      <div class="height60">4</div>
+      <div class="height30"5</div>
+      <div class="height37">6</div>
+    </div>
+  </body>
+</html>

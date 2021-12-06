@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        height: 100px;
+        width: 800px;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+
+      /* .flex-container > div {
+         font-size: 30px;
+        width: 20vh;
+          background-color: rgb(243, 241, 241);
+      } */
+      .first {
+        flex-grow: 1;
+        background-color: grey;
+        color: white;
+      }
+      .second {
+        flex-grow: 3;
+        background-color: blue;
+        color: white;
+      }
+      .third {
+        flex-grow: 1;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexible Layout-align items</h1>
+    <p>Parent Element (Container)</p>
+    <div class="flex-container">
+      <div class="first">1<sup>st</sup></div>
+      <div class="second">2<sup>nd</sup></div>
+      <div class="third">3<sup>rd</sup></div>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #main {
+        width: 350px;
+        height: 100px;
+        border: 1px solid #c3c3c3;
+        display: flex;
+      }
+
+      #main div:nth-of-type(1) {
+        flex-grow: 1;
+      }
+      #main div:nth-of-type(2) {
+        flex-grow: 3;
+      }
+      #main div:nth-of-type(3) {
+        flex-grow: 1;
+      }
+      #main div:nth-of-type(4) {
+        flex-grow: 1;
+      }
+      #main div:nth-of-type(5) {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The flex-grow Property</h1>
+
+    <div id="main">
+      <div style="background-color: coral"></div>
+      <div style="background-color: lightblue"></div>
+      <div style="background-color: khaki"></div>
+      <div style="background-color: pink"></div>
+      <div style="background-color: lightgrey"></div>
+    </div>
+
+    <p>
+      <b>Note:</b> Internet Explorer 10 and earlier versions do not support the
+      flex-grow property.
+    </p>
+  </body>
+</html>
+ -->
