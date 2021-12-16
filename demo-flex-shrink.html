@@ -2,37 +2,45 @@
 <html>
   <head>
     <style>
-      #main {
-        width: 350px;
-        height: 100px;
-        border: 1px solid #c3c3c3;
+      .flex-container {
         display: flex;
+        height: 100px;
+        width: 200px;
       }
-
-      #main div {
+      .first {
+        background-color: lightgreen;
+        color: black;
+        font-size: 25px;
         flex-shrink: 1;
         flex-basis: 100px;
       }
 
-      #main div:nth-of-type(2) {
-        flex-shrink: 3;
+      .second {
+        background-color: lightgoldenrodyellow;
+        color: black;
+        font-size: 25px;
+        flex-shrink: 2;
+        flex-basis: 100px;
+      }
+
+      .third {
+        background-color: lightsalmon;
+        color: black;
+        font-size: 25px;
+        flex-shrink: 1;
+        flex-basis: 100px;
       }
     </style>
   </head>
   <body>
-    <h1>The flex-shrink Property</h1>
-
-    <div id="main">
-      <div style="background-color: coral"></div>
-      <div style="background-color: lightblue"></div>
-      <div style="background-color: khaki"></div>
-      <div style="background-color: pink"></div>
-      <div style="background-color: lightgrey"></div>
-    </div>
-
-    <p>
-      <b>Note:</b> Internet Explorer 10 and earlier versions do not support the
-      flex-shrink property.
-    </p>
+    <body>
+      <h1>Flexible Layout-flex shrink</h1>
+      <p>Parent Element (Container)</p>
+      <div class="flex-container">
+        <div class="first">1<sup>st</sup></div>
+        <div class="second">2<sup>nd</sup></div>
+        <div class="third">3<sup>rd</sup></div>
+      </div>
+    </body>
   </body>
 </html>
