@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: salmon;
+        flex-wrap: wrap; /*important */
+        height: 80vh;
+      }
+
+      .child1 {
+        flex-grow: 1;
+        flex-basis: 150px;
+        background-color: skyblue;
+        font-size: 40px;
+      }
+      .child2 {
+        flex-grow: 1;
+        background-color: orange;
+        font-size: 40px;
+      }
+      .child3 {
+        flex-grow: 1;
+        font-size: 40px;
+        flex-basis: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create a Flex Container</h1>
+
+    <div class="flex-container">
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+    </div>
+  </body>
+</html>

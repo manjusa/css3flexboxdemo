@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- flex percentage using flex %
+    Percentage can be used like col-sm-2 sm-4 etc-->
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: salmon;
+        flex-wrap: wrap; /*important */
+      }
+
+      .flex-child1 {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        flex: 25%;
+      }
+      .flex-child2 {
+        background-color: skyblue;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        flex: 25%;
+      }
+      @media (max-width: 800px) {
+        .flex-child2,
+        .flex-child1 {
+          flex: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create a Flex Container</h1>
+
+    <div class="flex-container">
+      <div class="flex-container">
+        <div class="flex-child1">
+          Mauris ullamcorper magna faucibus elementum aliquam.
+        </div>
+        <div class="flex-child2">Vestibulum ut lectus erat.</div>
+      </div>
+    </div>
+  </body>
+</html>

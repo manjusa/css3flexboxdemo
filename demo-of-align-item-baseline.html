@@ -5,39 +5,43 @@
     <style>
       .flex-container {
         display: flex;
-        flex-wrap: wrap;
         background-color: green;
-        align-items: flex-end;
-        /* justify-content: flex-end; */
+        align-items: flex-start;
         flex-direction: row;
-        height: 50vh;
+        height: 100px;
       }
-
       .flex-container > div {
+        width: 1200px;
+      }
+      .item1 {
+        height: 40px;
+        background-color: red;
+        padding: 10px;
         font-size: 30px;
-        width: 20vh;
-        background-color: rgb(243, 241, 241);
       }
-
-      .height30 {
-        margin-top: 30px;
-        height:30px;
+      .item2 {
+        height: 50px;
+        background-color: grey;
+        padding: 10px;
+        font-size: 60px;
       }
-      .height10 {
-        margin-top: 10px;
-        height:10px;
+      .item3 {
+        height: 40px;
+        background-color: cyan;
+        padding: 10px;
+        font-size: 15px;
       }
-      .height50 {
-        margin-top: 50px;
-        height:50px;
+      .item4 {
+        height: 40px;
+        background-color: lightcoral;
+        padding: 10px;
+        font-size: 40px;
       }
-      .height60 {
-        margin-top: 60px;
-        height:60px;
-      }
-      .height70 {
-        margin-top: 70px;
-        height:70px;
+      .item5 {
+        height: 40px;
+        background-color: lightskyblue;
+        padding: 10px;
+        font-size: 50px;
       }
     </style>
   </head>
@@ -45,12 +49,17 @@
     <h1>Flexible Layout-align items</h1>
     <p>Parent Element (Container)</p>
     <div class="flex-container">
-      <div class="height30">1</div>
-      <div class="height10">2</div>
-      <div class="height50">3</div>
-      <div class="height60">4</div>
-      <div class="height30"5</div>
-      <div class="height37">6</div>
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+      <div class="item4">Item4</div>
+      <div class="item5">Item5</div>
     </div>
   </body>
 </html>
+<!--
+
+  baseline is the line upon which most letters sit.baseline is highlighed in red in first image. 
+  Coming to flexbox baseline value for FIs will align FI along their contents baseline
+  i u ever want the text inse the items to line up, go with base line
+-->

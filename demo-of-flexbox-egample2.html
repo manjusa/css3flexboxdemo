@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: salmon;
+        flex-wrap: wrap; /*important */
+      }
+
+      .flex-child {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        width: 300px;
+      }
+      @media (max-width: 800px) {
+        .flex-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create a Flex Container</h1>
+
+    <div class="flex-container">
+      <div class="flex-child">
+        Mauris ullamcorper magna faucibus elementum aliquam.
+      </div>
+      <div class="flex-child">
+        Vestibulum ut lectus erat. Sed posuere ligula ut nisl auctor, eu
+        efficitur orci egestas. Cras orci tellus, varius et lacus sed.
+      </div>
+      <div class="flex-child">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at
+        felis ex. In efficitur risus eget lacus tincidunt porta. In nisl sem,
+        blandit eget pulvinar a, pellentesque laoreet odio. Suspendisse potenti.
+      </div>
+      <div class="flex-child">
+        Mauris condimentum ex quis nunc gravida cursus. In tempor blandit
+        mollis. Duis ante magna, varius pulvinar commodo a, sollicitudin et
+        massa. Integer non laoreet velit, a fermentum urna. Suspendisse potenti.
+        In a dignissim augue, eu hendrerit orci. Aenean non lorem eget lacus
+        pretium porttitor.
+      </div>
+      <div class="flex-child">
+        Mauris condimentum ex quis nunc gravida cursus. In tempor blandit
+        mollis. Duis ante magna, varius pulvinar commodo a, sollicitudin et
+        massa. Integer non laoreet velit, a fermentum urna. Suspendisse potenti.
+        In a dignissim augue, eu hendrerit orci. Aenean non lorem eget lacus
+        pretium porttitor.
+      </div>
+    </div>
+  </body>
+</html>

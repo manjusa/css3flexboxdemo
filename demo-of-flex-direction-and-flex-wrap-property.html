@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <!--https://www.youtube.com/watch?v=XIJZjhqs7m0-->
   <head>
     <style>
       .flex-container {
         display: flex;
-        flex-wrap: wrap;
         background-color: green;
-        align-items: stretch;
-        /* justify-content: center; */
         flex-direction: row;
-        height: 200px;
+        flex-wrap: wrap;
+        height: 30vh;
+        border: 2px solid blue;
       }
 
       .flex-container > div {
         font-size: 30px;
-        width: 70px;
+        width: 80px;
         background-color: rgb(243, 241, 241);
       }
     </style>
   </head>
   <body>
-    <h1>Flexible Layout-align items</h1>
-    <p>Parent Element (Container)</p>
+    <h1>Flexbox direction and flex wrap</h1>
     <div class="flex-container">
       <div>1</div>
       <div>2</div>
@@ -36,7 +33,15 @@
       <div>10</div>
       <div>11</div>
       <div>12</div>
-      <div>13</div>
     </div>
   </body>
 </html>
+<!-- try out 
+
+1)  flex-direction:row,
+  1a)              row-reverse;
+  1b)             only give height to container
+2) flex-direction:column
+                :column-reverse;
+3) add more items 
+ -->
